@@ -31,4 +31,5 @@ export class AppComponent {
     this.spaceScreens.splice(i, 1);
     console.log(i);
   }
+
 }

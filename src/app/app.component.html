@@ -1,5 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
+
 <md-toolbar color="primary">
+
     <span>GameViewer</span>
     <span class="spacer"></span>
     <button md-icon-button [mdMenuTriggerFor]="menu">
@@ -19,12 +20,16 @@
         <span>Disable alerts</span>
       </button>
     </md-menu>
+
 </md-toolbar>
 
+    <!-- gallery tab --> 
+
 <md-tab-group>
+
     <md-tab label="Gallery">
         <md-card *ngFor="let spaceScreen of spaceScreens; let i = index">
-            <img md-card-image src="{{ spaceScreen.img }}">
+            <img  md-card-image src="{{ spaceScreen.img }}">
             <md-card-content>
                 <p>{{ spaceScreen.description}}</p>
             </md-card-content>
@@ -44,6 +49,14 @@
             </md-card-actions>
         </md-card>
     </md-tab>
+
+    <!-- upload tab --> 
+    <md-tab label="Upload">
+
+    </md-tab>
+
+    <!-- settings tab --> 
+
     <md-tab label="Settings">
         <div id="page-padding">
             <h1>Settings</h1>
@@ -57,4 +70,10 @@
             <md-slide-toggle>Some setting</md-slide-toggle>
         </div>
     </md-tab>
+
+    <!-- upload about --> 
+    <md-tab label="About">
+                
+    </md-tab>
+
 </md-tab-group>
